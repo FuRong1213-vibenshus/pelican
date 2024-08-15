@@ -1,5 +1,5 @@
 AUTHOR = 'FuRong'
-SITENAME = 'Pelican'
+SITENAME = 'Programmering B og Valgfag Vibenshus 2024'
 SITEURL = ""
 
 PATH = "content"
@@ -29,7 +29,29 @@ SOCIAL = (
     ("Another social link", "#"),
 )
 
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {
+            'css_class': 'highlight',
+        },
+        'markdown.extensions.admonition': {},
+        'markdown.extensions.extra': {
+        },
+        # optionally, more extensions,
+        # e.g. markdown.extensions.meta
+        'markdown.extensions.meta': {},
+        'smarty' : {
+            'smart_angled_quotes' : 'true'
+        },
+#        'markdown.extensions.toc': {
+#            'permalink': 'true',
+#        },
+    },
+#    'output_format': 'html5',
+}
+
 DEFAULT_PAGINATION = 10
-# THEME = "/home/rf/Documents/github/pelican/output/theme/themes/relapse"
+THEME = "/home/rf/Documents/pelican-themes/blue-penguin"
+#THEME = "notmyidea"
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True

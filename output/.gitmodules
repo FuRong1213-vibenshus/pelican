@@ -1,0 +1,3 @@
+[submodule "pelicanoutput"]
+	path = pelicanoutput
+	url = https://github.com/FuRong1213-vibenshus/pelicanoutput.git
