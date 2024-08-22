@@ -55,3 +55,5 @@ THEME = "/home/rf/Documents/pelican-themes/blue-penguin"
 #THEME = "notmyidea"
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
+
+STATIC_PATHS = ['pictures']
