@@ -15,7 +15,7 @@ Tags: arcade, project
 + [What is a Programming Language](https://learn.arcade.academy/en/latest/chapters/06_what_is_a_programming_language/index.html)
 
 ## Do it yourself
-+ Draw the picture below, by applying the same coding structure (function calls) as [Drawing Primitives](https://api.arcade.academy/en/latest/examples/drawing_primitives.html#drawing-primitives)
++ Draw the picture below, by applying the same coding structure (function calls) as [Drawing with functions](https://api.arcade.academy/en/latest/examples/drawing_with_functions.html#drawing-with-functions)
   
     ![House]({static}/pictures/house_tree_cars.png)
 

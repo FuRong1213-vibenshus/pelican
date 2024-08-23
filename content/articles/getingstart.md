@@ -35,3 +35,9 @@ Tags: pelican, tutorial, workshop
 2. Install python (and jupyter notebook) and make it avaiable for your IDE.
 3. Install pip. 
 4. We are using **Python Crash Course, third edition**, download the copy.
+
+## Code Blog
++ Refer to this [Example](https://simulatine.github.io/100DaysOfCode/category/posts.html)
++ [Jupyter notebook](https://jupyter.org/) is a good start for noting down your progress
++ I am using [Pelican](https://getpelican.com/) for generating a static web site. 
+
