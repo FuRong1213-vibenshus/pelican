@@ -15,7 +15,7 @@ Tags: Python,arcade, loops, list
 
 ## Do it yourself
 + "Try it yourself" blocks in Chapter 4 **Python crash course**
-+ Add the movement into the pictures drawn previously. (bird flying, cloud moving, etc.) 
++ Add some movements into the pictures drawn previously. (bird flying, cloud moving, etc.) 
 
 
 
