@@ -14,8 +14,8 @@ Tags: Python,arcade, loops, list
 
 
 ## Do it yourself
++ Finish [Loopy lab](https://learn.arcade.academy/en/latest/labs/lab_05_loopy_lab/loopy_lab.html)
 + "Try it yourself" blocks in Chapter 4 **Python crash course**
-+ Add some movements into the pictures drawn previously. (bird flying, cloud moving, etc.) 
 
 
 

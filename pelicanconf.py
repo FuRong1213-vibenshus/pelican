@@ -20,13 +20,13 @@ LINKS = (
     ("Pelican", "https://getpelican.com/"),
     ("Python.org", "https://www.python.org/"),
     ("Jinja2", "https://palletsprojects.com/p/jinja/"),
-    ("You can modify those links in your config file", "#"),
+#    ("You can modify those links in your config file", "#"),
 )
 
 # Social widget
 SOCIAL = (
-    ("You can add links in your config file", "#"),
-    ("Another social link", "#"),
+    #("You can add links in your config file", "#"),
+    #("Another social link", "#"),
 )
 
 MARKDOWN = {
@@ -51,7 +51,10 @@ MARKDOWN = {
 }
 
 DEFAULT_PAGINATION = 10
-THEME = "/home/rf/Documents/pelican-themes/blue-penguin"
+
+
+THEME = "/home/rf/Documents/pelican-themes/bootstrap2"
+
 #THEME = "notmyidea"
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True

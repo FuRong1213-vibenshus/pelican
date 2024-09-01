@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Game by Arcade</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="FuRong">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="./theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="./theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="./theme/css/font-awesome.css" rel="stylesheet">
+
+    <link href="./theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="./theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="./theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./theme/images/apple-touch-icon-114x114.png">
+
+    <link href="./" type="application/atom+xml" rel="alternate" title="Programmering B og Valgfag Vibenshus 2024 ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="./index.html">Programmering B og Valgfag Vibenshus 2024 </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                          <li class="divider-vertical"></li>
+                  <li >
+                    <a href="./category/articles.html">
+						<i class="icon-folder-open icon-large"></i>articles
+					</a>
+                  </li>
+                  <li class="active">
+                    <a href="./category/projects.html">
+						<i class="icon-folder-open icon-large"></i>projects
+					</a>
+                  </li>
+
+                          <ul class="nav pull-right">
+                                <li><a href="./archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+<section id="content">
+        <article>
+                <header>
+                        <h1>
+                                <a href=""
+                                        rel="bookmark"
+                                        title="Permalink to Simple Game by Arcade">
+                                        Simple Game by Arcade
+                                </a>
+                        </h1>
+                </header>
+                <div class="entry-content">
+                <div class="well">
+<footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2024-08-31T09:20:00+02:00">
+        <i class="icon-calendar"></i>za 31 augustus 2024
+</abbr>
+<span class="label">By</span>
+<a href="./author/rong.html"><i class="icon-user"></i>Rong</a>
+<span class="label">Category</span>
+<a href="./category/projects.html"><i class="icon-folder-open"></i>projects</a>.
+
+
+</footer><!-- /.post-info -->                </div>
+                <h2>Background</h2>
+<p><strong>It is highly recommended that
+you read the relevant parts of the articles below along the whole process,
+however some of the functions mentioned in the articles are obsolete</strong></p>
+<ul>
+<li><a href="https://realpython.com/arcade-python-game-framework/">Arcade: A Primer on the Python Game Framework</a></li>
+<li><a href="https://realpython.com/platformer-python-arcade/">Build a Platform Game in Python With Arcade</a></li>
+</ul>
+<h2>Install the arcade library</h2>
+<ul>
+<li>Refer to <a href="./getting-ready.html">Installation</a></li>
+</ul>
+<h2>Draw items on the screen</h2>
+<ul>
+<li>
+<p><strong><em>Drawing primitives</em></strong> </p>
+<ul>
+<li><a href="https://api.arcade.academy/en/latest/examples/index.html#sprite-player-movement">Drawing primitivies</a></li>
+</ul>
+</li>
+<li>
+<p><strong><em>Animations</em></strong></p>
+<ul>
+<li><a href="https://api.arcade.academy/en/latest/examples/shapes.html#shapes-slow">Bouncing Shapes</a></li>
+</ul>
+</li>
+<li>
+<p><strong><em>Sprites</em></strong></p>
+<ul>
+<li><a href="https://api.arcade.academy/en/latest/examples/sprite_collect_coins.html#sprite-collect-coins">Sprites</a></li>
+</ul>
+</li>
+</ul>
+<h2>Work with the arcade Python game loop</h2>
+<ol>
+<li>The <strong>program</strong> determines if the game is over. If so, then the loop ends.</li>
+<li>The <strong>user input</strong> is processed.</li>
+<li>The <strong>states</strong> of game objects are updated based on factors such as user input or time.</li>
+<li>The game displays visuals and plays sound effects based on the new state.</li>
+</ol>
+<details>
+  <summary> <b>Arcade Game Skeleton</b> (<i>click to expand</i>)</summary>
+  <!-- have to be followed by an empty line! -->
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">arcade</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">MyGame</span><span class="p">(</span><span class="n">arcade</span><span class="o">.</span><span class="n">Window</span><span class="p">):</span>
+
+<span class="w">    </span><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+
+<span class="w">        </span><span class="k">pass</span>
+
+<span class="w">    </span><span class="k">def</span><span class="w"> </span><span class="nf">setup</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+
+<span class="w">        </span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">        Sets up the game for the current level</span>
+<span class="s2">        &quot;&quot;&quot;</span>
+<span class="w">        </span><span class="k">pass</span>
+
+<span class="w">    </span><span class="k">def</span><span class="w"> </span><span class="nf">on_key_press</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="p">:</span><span class="w"> </span><span class="nb">int</span><span class="p">,</span><span class="w"> </span><span class="n">modifiers</span><span class="p">:</span><span class="w"> </span><span class="nb">int</span><span class="p">):</span>
+
+<span class="w">        </span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">        Processes key presses</span>
+<span class="s2">        Arguments:</span>
+<span class="s2">            key </span><span class="si">{int}</span><span class="s2"> -- Which key was pressed</span>
+<span class="s2">            modifiers </span><span class="si">{int}</span><span class="s2"> -- Which modifiers were down at the time</span>
+<span class="s2">        &quot;&quot;&quot;</span>
+
+<span class="w">    </span><span class="k">def</span><span class="w"> </span><span class="nf">on_key_release</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="p">:</span><span class="w"> </span><span class="nb">int</span><span class="p">,</span><span class="w"> </span><span class="n">modifiers</span><span class="p">:</span><span class="w"> </span><span class="nb">int</span><span class="p">):</span>
+<span class="w">        </span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">        Processes key releases</span>
+<span class="s2">        Arguments:</span>
+<span class="s2">            key </span><span class="si">{int}</span><span class="s2"> -- Which key was released</span>
+<span class="s2">            modifiers </span><span class="si">{int}</span><span class="s2"> -- Which modifiers were down at the time</span>
+<span class="s2">        &quot;&quot;&quot;</span>
+
+<span class="w">    </span><span class="k">def</span><span class="w"> </span><span class="nf">on_update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="n">delta_time</span><span class="p">:</span><span class="w"> </span><span class="nb">float</span><span class="p">):</span>
+
+<span class="w">        </span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">        Updates the position of all game objects</span>
+<span class="s2">        Arguments:</span>
+<span class="s2">            delta_time </span><span class="si">{float}</span><span class="s2"> -- How much time since the last call</span>
+<span class="s2">        &quot;&quot;&quot;</span>
+<span class="w">        </span><span class="k">pass</span>
+
+<span class="w">    </span><span class="k">def</span><span class="w"> </span><span class="nf">on_draw</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="k">pass</span>
+
+
+<span class="k">if</span><span class="w"> </span><span class="vm">__name__</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<span class="w">    </span><span class="n">window</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Platformer</span><span class="p">()</span>
+<span class="w">    </span><span class="n">window</span><span class="o">.</span><span class="n">setup</span><span class="p">()</span>
+<span class="w">    </span><span class="n">arcade</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</code></pre></div>
+
+
+
+</details>
+
+<h2>Manage on-screen graphic elements</h2>
+<h2>Handle user input</h2>
+<h2>Play sound effects and music</h2>
+                </div><!-- /.entry-content -->
+        </article>
+</section>
+        </div><!--/span-->
+
+                <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="https://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
+    <li><a href="https://www.python.org/"><i class="icon-external-link"></i>Python.org</a></li>
+    <li><a href="https://palletsprojects.com/p/jinja/"><i class="icon-external-link"></i>Jinja2</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="./category/articles.html">
+    <i class="icon-folder-open icon-large"></i>articles
+</a>
+</li>
+<li>
+<a href="./category/projects.html">
+    <i class="icon-folder-open icon-large"></i>projects
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./theme/js/jquery-1.7.2.min.js"></script>
+    <script src="./theme/js/bootstrap.min.js"></script>
+  </body>
+</html>
