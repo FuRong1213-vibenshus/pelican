@@ -1,5 +1,5 @@
 AUTHOR = 'FuRong'
-SITENAME = 'Programmering B og Valgfag Vibenshus 2024'
+SITENAME = 'Programmering B'
 SITEURL = ""
 
 PATH = "content"
@@ -53,7 +53,7 @@ MARKDOWN = {
 DEFAULT_PAGINATION = 10
 
 
-THEME = "/home/rf/Documents/pelican-themes/bootstrap2"
+THEME = "/home/rf/Documents/pelican-themes/pelican-twitchy"
 
 #THEME = "notmyidea"
 # Uncomment following line if you want document-relative URLs when developing
