@@ -15,6 +15,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+
 # Blogroll
 LINKS = (
     ("Pelican", "https://getpelican.com/"),
@@ -28,7 +29,7 @@ SOCIAL = (
     #("You can add links in your config file", "#"),
     #("Another social link", "#"),
 )
-
+DISPLAY_CATEGORIES_ON_MENU = True
 MARKDOWN = {
     'extension_configs': {
         'markdown.extensions.codehilite': {
@@ -53,7 +54,7 @@ MARKDOWN = {
 DEFAULT_PAGINATION = 10
 
 
-THEME = "/home/rf/Documents/pelican-themes/pelican-twitchy"
+THEME = "/home/rf/Documents/pelican-themes/bootstrap2"
 
 #THEME = "notmyidea"
 # Uncomment following line if you want document-relative URLs when developing

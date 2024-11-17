@@ -5,12 +5,12 @@ Tags: python, simulation, mathmatics
 
 
 ## Objective
-    + understand Problem Modeling in Computer Science:
-        + Use computer program to reasearch a subject/problem, by means of
++ understand Problem Modeling in Computer Science:
+    + Use computer program to reasearch a subject/problem, by means of
       modelling or simulating.
-    + Improve the programming skills by applying flowchart to visualize the
++ Improve the programming skills by applying flowchart to visualize the
       code structure.  
-    + Practising with the fundamental programming elements, including variables, functions, comprehensive data types (list and arrays), expressions, control structures.
++ Practising with the fundamental programming elements, including variables, functions, comprehensive data types (list and arrays), expressions, control structures.
 
 
 ## Reading Materials

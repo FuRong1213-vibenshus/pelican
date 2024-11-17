@@ -1,187 +1,255 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="keywords" content="loops" />
+  <head>
+    <meta charset="utf-8">
+    <title>Programmering B - loops</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="FuRong">
 
+    <!-- Le styles -->
+    <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="../theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="../theme/css/font-awesome.css" rel="stylesheet">
 
-    <title>loops - Programmering B</title>
+    <link href="../theme/css/pygments.css" rel="stylesheet">
 
-        <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css" />
-
-    <link href="../theme/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="../theme/css/pygments/native.css" rel="stylesheet" />
-    
-    <link href="../theme/css/pelican-twitchy.min.css" rel="stylesheet" />
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    
-    <!-- Feeds -->
-</head>
-<body data-spy="scroll" data-target="#scrollspy">
-    <div id="wrapper">
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper-small" class="twitchy-background">
-            <ul id="accordion-small" class="sidebar-nav sidebar-nav-small">
-                <li>
-        <a href=".." title="Programmering B" class="collapsed">
-            <span class="glyphicon glyphicon-home"></span>
-        </a>
-    </li>
-                <li class="nav-divider"></li>
-                <li>
-        <a href="../archives.html" title="Recent Articles" class="collapsed">
-            <span class="glyphicon glyphicon-th-list"></span>
-        </a>
-    </li>
-                
-                <li class="nav-divider"></li>
-                <li>
-        <a href="#" title="Back to top" class="collapsed">
-            <span class="fa fa-arrow-up"></span>
-        </a>
-    </li>
-            </ul>
-        </div>
-        <div id="sidebar-wrapper" class="twitchy-background">
-            <ul id="accordion" class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="../">
-                            <span class="glyphicon glyphicon-home padding-small"></span>
-                            Programmering B
-                    </a>
-                </li>
-                    <li>
-                        <a href="../archives.html">
-                            <span class="glyphicon glyphicon-th-list padding-small"></span>
-                            Recent Articles
-                        </a>
-                    </li>
-                
-                <li class="nav-divider"></li>
-                <li>
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-pages">
-                        <i class="fa fa-folder-open padding-small"></i>
-                        Pages
-                    </a>
-                </li>
-                <li class="panel anti-panel"><ul id="collapse-pages" class="sidebar_submenu collapse ">
-                </ul></li>
-                
-                <li class="nav-divider"></li>
-                <li>
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-categories">
-                        <i class="fa fa-folder-open padding-small"></i>
-                        Categories
-                    </a>
-                </li>
-                <li class="panel anti-panel"><ul id="collapse-categories" class="sidebar_submenu collapse ">
-                    <li >
-                        <a href="../category/articles.html">
-                            <i class="fa fa-folder-open padding-small"></i>
-                            articles
-                            <span class="badge pull-right categorybadge">2</span>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="../category/projects.html">
-                            <i class="fa fa-folder-open padding-small"></i>
-                            projects
-                            <span class="badge pull-right categorybadge">2</span>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="../category/pythonbasic.html">
-                            <i class="fa fa-folder-open padding-small"></i>
-                            pythonbasic
-                            <span class="badge pull-right categorybadge">5</span>
-                        </a>
-                    </li>
-                </ul></li>
-                
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
-        <!-- open/close sidebar -->
-        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
-            <span id="right-arrow" class="glyphicon glyphicon-chevron-right"  title="expand sidebar"></span>
-            <span id="left-arrow" class="glyphicon glyphicon-chevron-left" title="minimize sidebar"></span>
-        </a>
-       <!-- /open/close sidebar -->
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-<div class="row">
-    <div class="col-lg-9">
-        <header class="page-header">
-            <h1>Articles featuring loops</h1>
-        </header>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-9">
-            <article>
-                <h4>
-                    <time datetime="2024-09-06T00:00:00+02:00"> vr 06 september 2024</time>
-                    <a href="../if-while-and-user-input.html">If, while and user input</a>
-                </h4>
-            </article>
-            <article>
-                <h4>
-                    <time datetime="2024-09-01T00:00:00+02:00"> zo 01 september 2024</time>
-                    <a href="../lists-and-loops.html">Lists and Loops</a>
-                </h4>
-            </article>
-    </div>
-</div>
-<footer>
-    <hr>
-    <div class="row">
-        <div class="col-lg-9 text-center">
-            <p><small>
-                Built by <a href="http://docs.getpelican.com/en/latest">Pelican</a> / <a href="https://github.com/ingwinlu/pelican-twitchy">pelican-twitchy</a>
-                &middot;                    &copy; 2024 FuRong
-            </small></p>
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="../theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../theme/images/apple-touch-icon-114x114.png">
+
+    <link href="../" type="application/atom+xml" rel="alternate" title="Programmering B ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="../index.html">Programmering B </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                          <li class="divider-vertical"></li>
+                  <li >
+                    <a href="../category/articles.html">
+						<i class="icon-folder-open icon-large"></i>articles
+					</a>
+                  </li>
+                  <li >
+                    <a href="../category/data-and-modelling.html">
+						<i class="icon-folder-open icon-large"></i>Data and Modelling
+					</a>
+                  </li>
+                  <li >
+                    <a href="../category/introduction-to-python.html">
+						<i class="icon-folder-open icon-large"></i>Introduction to Python
+					</a>
+                  </li>
+                  <li >
+                    <a href="../category/projects.html">
+						<i class="icon-folder-open icon-large"></i>projects
+					</a>
+                  </li>
+
+                          <ul class="nav pull-right">
+                                <li><a href="../archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
         </div>
+      </div>
     </div>
-</footer>            </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+        <div class="article">
+                <h1><a href="../if-while-and-user-input.html">If, while and user input</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2024-09-06T00:00:00+02:00">
+        <i class="icon-calendar"></i>vr 06 september 2024
+</abbr>
+<span class="label">By</span>
+<a href="../author/rong.html"><i class="icon-user"></i>Rong</a>
+<span class="label">Category</span>
+<a href="../category/introduction-to-python.html"><i class="icon-folder-open"></i>Introduction to Python</a>.
+
+
+<span class="label">Tags</span>
+	<a href="../tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="../tag/arcade.html"><i class="icon-tag"></i>arcade</a>
+	<a href="../tag/loops.html"><i class="icon-tag"></i>loops</a>
+	<a href="../tag/list.html"><i class="icon-tag"></i>list</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h2>Reading Materials</h2>
+<ul>
+<li><strong>Python crash course</strong><ul>
+<li>Chapter 5 </li>
+<li>Chapter 7 </li>
+</ul>
+</li>
+<li><strong>Arcade</strong><ul>
+<li><a href="https://learn.arcade.academy/en/latest/chapters/10_if_statements/if_statements.html">If Statements</a></li>
+<li><a href="https://learn.arcade.academy/en/latest/chapters/12_while_loops/while_loops.html">While Loops</a></li>
+</ul>
+</li>
+</ul>
+<h2>Code Examples</h2>
+<ul>
+<li><a href="https://api.arcade.academy/en/latest/examples/bouncing_rectangle.html#bouncing-rectangle">Bouncing Rectangle</a></li>
+</ul>
+<h2>Do It Yourself</h2>
+<ul>
+<li>&ldquo;Try it yourself&rdquo; blocks in Chapter 5 and 7 <strong>Python crash course</strong></li>
+<li><a href="https://learn.arcade.academy/en/latest/labs/lab_04_camel/camel.html">Lab 4: Camel</a></li>
+<li>(Advanced) Make your own text-based story?</li>
+<li>(Advanced) Change the trajectory of the <a href="https://api.arcade.academy/en/latest/examples/bouncing_rectangle.html#bouncing-rectangle">Bouncing Rectangle …</a></li></ul>
+                        <a class="btn primary xsmall" href="../if-while-and-user-input.html">more ...</a>
+                </div>
         </div>
-        <!-- /#page-content-wrapper -->
-    </div>
-    <!-- /#wrapper -->
-    <!-- jQuery Version 1.11.2 -->
-    <script src="../theme/js/jquery-1.11.2.min.js"></script>
-    <!-- Bootstrap Core JavaScript -->
+        <hr />
+        <div class="article">
+                <h1><a href="../lists-and-loops.html">Lists and Loops</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2024-09-01T00:00:00+02:00">
+        <i class="icon-calendar"></i>zo 01 september 2024
+</abbr>
+<span class="label">By</span>
+<a href="../author/rong.html"><i class="icon-user"></i>Rong</a>
+<span class="label">Category</span>
+<a href="../category/introduction-to-python.html"><i class="icon-folder-open"></i>Introduction to Python</a>.
+
+
+<span class="label">Tags</span>
+	<a href="../tag/python.html"><i class="icon-tag"></i>Python</a>
+	<a href="../tag/arcade.html"><i class="icon-tag"></i>arcade</a>
+	<a href="../tag/loops.html"><i class="icon-tag"></i>loops</a>
+	<a href="../tag/list.html"><i class="icon-tag"></i>list</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h2>Reading Materials</h2>
+<ul>
+<li><strong>Python Crash Course</strong>    <ul>
+<li>Chapter 4 </li>
+</ul>
+</li>
+<li><strong>Arcade</strong><ul>
+<li><a href="https://learn.arcade.academy/en/latest/chapters/11_for_loops/for_loops.html">For Loops</a></li>
+<li><a href="https://learn.arcade.academy/en/latest/chapters/13_random_numbers/random_numbers.html">Random Numbers</a></li>
+<li><a href="https://learn.arcade.academy/en/latest/chapters/14_advanced_looping/advanced_looping.html">Advanced Looping</a></li>
+<li><a href="https://learn.arcade.academy/en/latest/chapters/15_lists/lists.html">Introduction to Lists</a></li>
+</ul>
+</li>
+</ul>
+<h2>Code Examples</h2>
+<ul>
+<li><a href="https://api.arcade.academy/en/latest/examples/drawing_with_loops.html#drawing-with-loops">Drawing with loops</a></li>
+<li>Section 13.1, 13.2 and 13.3 in  <a href="https://learn.arcade.academy/en/latest/chapters/13_random_numbers/random_numbers.html">Random numbers</a></li>
+<li><a href="https://api.arcade.academy/en/latest/examples/snow.html#snow">Falling snow</a></li>
+</ul>
+<h2>Do It Yourself</h2>
+<ul>
+<li><a href="https://learn.arcade.academy/en/latest/labs/lab_05_loopy_lab/loopy_lab.html">Lab 5: Loopy lab</a></li>
+<li>&ldquo;Try it yourself&rdquo; blocks in Chapter 4 <strong>Python …</strong></li></ul>
+                        <a class="btn primary xsmall" href="../lists-and-loops.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+
+        </div><!--/span-->
+
+                <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="https://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
+    <li><a href="https://www.python.org/"><i class="icon-external-link"></i>Python.org</a></li>
+    <li><a href="https://palletsprojects.com/p/jinja/"><i class="icon-external-link"></i>Jinja2</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="../category/articles.html">
+    <i class="icon-folder-open icon-large"></i>articles
+</a>
+</li>
+<li>
+<a href="../category/data-and-modelling.html">
+    <i class="icon-folder-open icon-large"></i>Data and Modelling
+</a>
+</li>
+<li>
+<a href="../category/introduction-to-python.html">
+    <i class="icon-folder-open icon-large"></i>Introduction to Python
+</a>
+</li>
+<li>
+<a href="../category/projects.html">
+    <i class="icon-folder-open icon-large"></i>projects
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../theme/js/jquery-1.7.2.min.js"></script>
     <script src="../theme/js/bootstrap.min.js"></script>
-    <!-- twitchy Script -->
-    <script src="../theme/js/pelican_twitchy.min.js"></script>
-<script>
-    function FadeInOnScroll(ObjectList){
-        ObjectList.each(function(i) {
-            var bottom_of_object = $(this).position().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-            if( bottom_of_window > bottom_of_object ){
-                $(this).fadeTo(750,1);
-            }
-        });
-    }
-
-    articles = $("article").fadeTo(0, 0.05);
-    FadeInOnScroll(articles)
-
-    $(window).scroll(function() {
-        FadeInOnScroll(articles)
-    });
-</script>
-</body>
+  </body>
 </html>
