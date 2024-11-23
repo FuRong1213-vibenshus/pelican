@@ -1,17 +1,12 @@
 Title: Numpy, pandas and matplotlib
 Author: Rong
 Date: 2024-11-23
-Tags: python, simulation, mathmatics, Monte Carlo Method
+Tags: python, data, computing, visualization
 
 
 ## Objective
++ Get your computing environment ready. 
 + Learn to use NumPy for numerical computation, pandas for data manipulation, and Matplotlib for visualization.
-
-
-
-## Reading Materials
-+ [The secretary problem](https://medium.com/pythoneers/the-secretary-problem-how-to-optimize-your-chances-of-success-c18665184b8f)
-+ [Flow Chart](https://programmering.systime.dk/?id=148)
 
 
 ## Lesson Plan
