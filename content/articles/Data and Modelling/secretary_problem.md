@@ -1,4 +1,4 @@
-Title: The Secretary Problem
+Title: The Secretary Problem -- 1
 Author: Rong
 Date: 2024-11-16
 Tags: python, simulation, mathmatics
