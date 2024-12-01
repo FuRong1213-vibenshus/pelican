@@ -30,5 +30,5 @@ Tags: python, simulation, mathmatics, monte carlo simulation
     + How about this [Gambler's fallacy](https://dev.to/josethz00/math-for-devs-gamblers-fallacy-and-monte-carlo-simulation-453a) 
 + Do it yourself
     + Write code for "finding Pi" according to the description in **Reading Materials**
-    + Write code to proof the "gambler's ruin". 
+    +(Advanced) Write code to proof the "gambler's ruin" (hint: random walk in a line). 
     
