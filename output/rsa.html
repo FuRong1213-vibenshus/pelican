@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>The Secretary Problem</title>
+    <title>RSA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="FuRong">
@@ -69,7 +69,7 @@
 						<i class="icon-folder-open icon-large"></i>articles
 					</a>
                   </li>
-                  <li class="active">
+                  <li >
                     <a href="./category/data-and-modelling.html">
 						<i class="icon-folder-open icon-large"></i>Data and Modelling
 					</a>
@@ -82,6 +82,11 @@
                   <li >
                     <a href="./category/projects.html">
 						<i class="icon-folder-open icon-large"></i>projects
+					</a>
+                  </li>
+                  <li class="active">
+                    <a href="./category/src.html">
+						<i class="icon-folder-open icon-large"></i>SRC
 					</a>
                   </li>
 
@@ -105,8 +110,8 @@
                         <h1>
                                 <a href=""
                                         rel="bookmark"
-                                        title="Permalink to The Secretary Problem">
-                                        The Secretary Problem
+                                        title="Permalink to RSA">
+                                        RSA
                                 </a>
                         </h1>
                 </header>
@@ -114,71 +119,111 @@
                 <div class="well">
 <footer class="post-info">
 <span class="label">Date</span>
-<abbr class="published" title="2024-11-16T00:00:00+01:00">
-        <i class="icon-calendar"></i>za 16 november 2024
+<abbr class="published" title="2024-11-30T00:00:00+01:00">
+        <i class="icon-calendar"></i>za 30 november 2024
 </abbr>
 <span class="label">By</span>
 <a href="./author/rong.html"><i class="icon-user"></i>Rong</a>
 <span class="label">Category</span>
-<a href="./category/data-and-modelling.html"><i class="icon-folder-open"></i>Data and Modelling</a>.
+<a href="./category/src.html"><i class="icon-folder-open"></i>SRC</a>.
 
 
 <span class="label">Tags</span>
-	<a href="./tag/python.html"><i class="icon-tag"></i>python</a>
-	<a href="./tag/simulation.html"><i class="icon-tag"></i>simulation</a>
-	<a href="./tag/mathmatics.html"><i class="icon-tag"></i>mathmatics</a>
+	<a href="./tag/src.html"><i class="icon-tag"></i>SRC</a>
+	<a href="./tag/encryption.html"><i class="icon-tag"></i>encryption</a>
 </footer><!-- /.post-info -->                </div>
                 <h2>Objective</h2>
 <ul>
-<li>understand Problem Modeling in Computer Science:<ul>
-<li>Use computer program to reasearch a subject/problem, by means of
-  modelling or simulating.</li>
+<li>Learn about prime numbers, factorizations, modulus and Euclid&rsquo;s algorithm.</li>
+<li>Understand modular exponentiation and modular inversion.</li>
+<li>Learn the steps to generate RSA keys</li>
+<li>Implement a simple RSA encryption and decryption algorithm. </li>
 </ul>
-</li>
-<li>Improve the programming skills by applying flowchart to visualize the
-      code structure.  </li>
-<li>Practising with the fundamental programming elements, including variables, functions, comprehensive data types (list and arrays), expressions, control structures.</li>
-</ul>
-<h2>Reading Materials</h2>
+<h2>Math behind RSA</h2>
 <ul>
-<li><a href="https://medium.com/pythoneers/the-secretary-problem-how-to-optimize-your-chances-of-success-c18665184b8f">The secretary problem</a></li>
-<li><a href="https://programmering.systime.dk/?id=148">Flow Chart</a></li>
+<li>The math behind RSA is <ul>
+<li><span class="math">\(C = M^e \; mod \; n\)</span></li>
+<li><span class="math">\(M = C^d \; mod \; n\)</span></li>
 </ul>
-<h2>Lesson Plan</h2>
+</li>
+</ul>
+<h2>Activities:</h2>
 <ul>
-<li>What is secretary problem?</li>
-<li>Learn to draw flow chart. </li>
-<li>Solve the secretary problem? </li>
-<li>(Optional) Mathmatic proof.    </li>
-</ul>
-<h2>Exercises</h2>
-<ul>
-<li>
-<p><a href="https://programmering.systime.dk/?id=148">Eksempel 5.5: Rutediagram for Euklids algoritme</a></p>
-<ul>
-<li>Read the flow diagram and write python code directly after it. </li>
-<li>Explain what it is about? https://mathtxa.systime.dk/?id=497. </li>
+<li>Key Generating <ul>
+<li>Complete function <em>isPrime()</em>, which checks if a number is prime number. (primeNum.py)</li>
+<li>Implment a function <em>generateLargePrime()</em> for generating large prime numbers (primeNum.py).</li>
+<li>Implment a function for Eucild&rsquo;s algorithm (cryptomath.py). </li>
+<li>Implment a function for modular inversion (cryptomath.py).   </li>
+<li>Use the above function to generate public key and private key pairs (makePublicPrivatekeys.py). 
+Implement a function for modular exponentiation.</li>
 </ul>
 </li>
-<li>
-<p><a href="https://www.programiz.com/dsa/bubble-sort">Bubble sort</a></p>
-<ul>
-<li>Draw the flow diagram and make it work.</li>
+<li>Calculate e, d and n for a simple RSA setup.</li>
+<li>implmentation of RSA encryption and decryption</li>
+<li>Test</li>
 </ul>
-</li>
-<li>How about the secretary problem ?<ul>
-<li>Simulation<ul>
-<li>Draw the flow diagram of selecting strategy. </li>
-<li>Program according to the drawing.</li>
-</ul>
-</li>
-<li>Verification<ul>
-<li>Is 36.79% the correct stop point? </li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML';
+
+    var configscript = document.createElement('script');
+    configscript.type = 'text/x-mathjax-config';
+    configscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'none' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        availableFonts: ['STIX', 'TeX']," +
+        "        preferredFont: 'STIX'," +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(configscript);
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
                 </div><!-- /.entry-content -->
         </article>
 </section>
@@ -210,6 +255,11 @@
 <li>
 <a href="./category/projects.html">
     <i class="icon-folder-open icon-large"></i>projects
+</a>
+</li>
+<li>
+<a href="./category/src.html">
+    <i class="icon-folder-open icon-large"></i>SRC
 </a>
 </li>
 

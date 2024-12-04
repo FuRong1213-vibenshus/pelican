@@ -61,3 +61,4 @@ THEME = "/home/rf/Documents/pelican-themes/bootstrap2"
 RELATIVE_URLS = True
 
 STATIC_PATHS = ['pictures']
+PLUGINS = ["render_math"]

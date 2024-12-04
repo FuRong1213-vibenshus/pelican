@@ -119,8 +119,8 @@
                 <div class="well">
 <footer class="post-info">
 <span class="label">Date</span>
-<abbr class="published" title="2024-11-30T00:00:00+01:00">
-        <i class="icon-calendar"></i>za 30 november 2024
+<abbr class="published" title="2024-12-03T00:00:00+01:00">
+        <i class="icon-calendar"></i>di 03 december 2024
 </abbr>
 <span class="label">By</span>
 <a href="./author/rong.html"><i class="icon-user"></i>Rong</a>
@@ -134,35 +134,53 @@
 </footer><!-- /.post-info -->                </div>
                 <h2>Objective</h2>
 <ul>
+<li>Understand basic cryptographic principles  </li>
 <li>Understand the difference between symmetric and asymmetric encryption </li>
-<li>Learn basic concepts: plaintext, ciphertex, keys and attack types.</li>
+<li>Learn basic concepts: plaintext, ciphertex and keys.</li>
 </ul>
 <h2>Lesson Plan</h2>
 <ul>
 <li>Brief history of encryption.<ul>
-<li>Caesar cipher</li>
-<li>Enigma</li>
+<li>Caesar cipher: </li>
+<li>Enigma: </li>
 </ul>
 </li>
-<li>Symmetric encryption: Concept and examples<ul>
+<li>Symmetric encryption<ul>
 <li>Caesar cipher</li>
 <li>AES</li>
 </ul>
 </li>
-<li>Asymmetric encryption<ul>
-<li>RSA</li>
+<li>Asymmetric encryption (public-key cryptosystem,) <ul>
+<li>RSA (Rivest–Shamir–Adleman)</li>
+<li>EEC (Elliptic-curve cryptography (ECC) )</li>
 </ul>
 </li>
 </ul>
-<h2>Exercises</h2>
+<h2>Reading Materials</h2>
 <ul>
-<li>Caesar cipher implementation in Python<ul>
-<li>Draw flow chart or write pesudocode first.</li>
-<li>Coding</li>
-<li>Brute Force Attacks</li>
+<li><a href="https://brilliant.org/wiki/enigma-machine/">Engima Machine</a></li>
+</ul>
+<h2>Activities and exercises</h2>
+<p>1.Caesar cipher implementation in Python
+    + Write a function caesar_encryption() that encrypts message by alphabet shift. </p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">caesar_cipher</span><span class="p">(</span><span class="n">msg</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">shift</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+
+    <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">msg</span><span class="p">:</span>
+        <span class="k">if</span> <span class="o">...</span>
+
+    <span class="k">return</span> <span class="n">cipher_text</span>
+</code></pre></div>
+
+<ol>
+<li>Vigenère ciphers implementation<ul>
+<li>Write a function vigenere_cipher() that encrypts message by shifting a entire block after a &ldquo;key-word&rdquo;</li>
 </ul>
 </li>
-</ul>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">vigenere_cipher</span><span class="p">(</span><span class="n">msg</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">keyword</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+
+    <span class="k">return</span> <span class="n">cipher_text</span>
+</code></pre></div>
                 </div><!-- /.entry-content -->
         </article>
 </section>
