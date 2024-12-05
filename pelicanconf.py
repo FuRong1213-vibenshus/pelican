@@ -1,5 +1,5 @@
 AUTHOR = 'FuRong'
-SITENAME = 'Programmering B og Valgfag Vibenshus 2024'
+SITENAME = 'Programmering B'
 SITEURL = ""
 
 PATH = "content"
@@ -15,20 +15,21 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+
 # Blogroll
 LINKS = (
     ("Pelican", "https://getpelican.com/"),
     ("Python.org", "https://www.python.org/"),
     ("Jinja2", "https://palletsprojects.com/p/jinja/"),
-    ("You can modify those links in your config file", "#"),
+#    ("You can modify those links in your config file", "#"),
 )
 
 # Social widget
 SOCIAL = (
-    ("You can add links in your config file", "#"),
-    ("Another social link", "#"),
+    #("You can add links in your config file", "#"),
+    #("Another social link", "#"),
 )
-
+DISPLAY_CATEGORIES_ON_MENU = True
 MARKDOWN = {
     'extension_configs': {
         'markdown.extensions.codehilite': {
@@ -51,9 +52,13 @@ MARKDOWN = {
 }
 
 DEFAULT_PAGINATION = 10
-THEME = "/home/rf/Documents/pelican-themes/blue-penguin"
+
+
+THEME = "/home/rf/Documents/pelican-themes/bootstrap2"
+
 #THEME = "notmyidea"
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
 STATIC_PATHS = ['pictures']
+PLUGINS = ["render_math"]
