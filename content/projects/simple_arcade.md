@@ -15,7 +15,7 @@ Author: Rong
 2. The **user input** is processed.
 3. The **states** of game objects are updated based on factors such as user input or time.
 4. The game displays visuals and plays sound effects based on the new state.
-
+---------------------------------------------------------------------------------
 ## Game Loops
 + [Using the Window Class](https://learn.arcade.academy/en/latest/chapters/18_window_class/window_class.html)
 
@@ -43,7 +43,7 @@ Author: Rong
 
 
 
-### Exercise 
+### Exercise -- 1 
 1. Download the whole folder [alien_invasion](https://github.com/FuRong1213-vibenshus/arcade/tree/main/alien_invasion) from github. Put it into the same arcade virtual environment and run.
 2. Make the bullets(laser) move forward. 
 3. (Optional) Make the bullets(laser) move randomly.
@@ -52,10 +52,19 @@ Author: Rong
 
 ## Handle user input
 
-### Exercise
+### Exercise -- 2
 1. Make some of bullets move quicker than others, depends on which key the player presses -- they are the more powerful bullets. 
 2. (Optional) Give a limited number to the powerful bullets, display them to the window. 
 3. (Optional) Collision detects between myship and the aliens. It cost one life if it happens.  
 
 ## Play sound effects and music
+
+### Exercise -- 3
+1. Write a class Alien (or directly use the Alien class from enemy.py) as the super class for all kinds of aliens. 
+2. Write a new class (SuperAlien) which is a child class of Alien. Rewrite the method update() within the class SuperAlien, so that the object of superalien can do something super powerful. 
+3. Add views in the beginning of the game. This requires rewrite class MyGame as well.
+ https://api.arcade.academy/en/2.6.17/tutorials/views/index.html
+4. Add class PauseView and GameOverView
+5. (Advanced) Add more levels by inheriting class MyGame.
+
 
