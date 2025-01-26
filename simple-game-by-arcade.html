@@ -140,6 +140,7 @@
 <li>The <strong>states</strong> of game objects are updated based on factors such as user input or time.</li>
 <li>The game displays visuals and plays sound effects based on the new state.</li>
 </ol>
+<hr />
 <h2>Game Loops</h2>
 <ul>
 <li><a href="https://learn.arcade.academy/en/latest/chapters/18_window_class/window_class.html">Using the Window Class</a></li>
@@ -172,7 +173,7 @@
 <li><a href="https://learn.arcade.academy/en/latest/chapters/21_sprites_and_collisions/sprites.html">Sprites And Collisions</a></li>
 <li><a href="https://learn.arcade.academy/en/latest/chapters/22_moving_sprites/moving_sprites.html">Moving Sprites</a></li>
 </ul>
-<h3>Exercise</h3>
+<h3>Exercise &ndash; 1</h3>
 <ol>
 <li>Download the whole folder <a href="https://github.com/FuRong1213-vibenshus/arcade/tree/main/alien_invasion">alien_invasion</a> from github. Put it into the same arcade virtual environment and run.</li>
 <li>Make the bullets(laser) move forward. </li>
@@ -181,13 +182,22 @@
 <li>(Optional) Make the aliens also shoot.  </li>
 </ol>
 <h2>Handle user input</h2>
-<h3>Exercise</h3>
+<h3>Exercise &ndash; 2</h3>
 <ol>
 <li>Make some of bullets move quicker than others, depends on which key the player presses &ndash; they are the more powerful bullets. </li>
 <li>(Optional) Give a limited number to the powerful bullets, display them to the window. </li>
 <li>(Optional) Collision detects between myship and the aliens. It cost one life if it happens.  </li>
 </ol>
 <h2>Play sound effects and music</h2>
+<h3>Exercise &ndash; 3</h3>
+<ol>
+<li>Write a class Alien (or directly use the Alien class from enemy.py) as the super class for all kinds of aliens. </li>
+<li>Write a new class (SuperAlien) which is a child class of Alien. Rewrite the method update() within the class SuperAlien, so that the object of superalien can do something super powerful. </li>
+<li>Add views in the beginning of the game. This requires rewrite class MyGame as well.
+ https://api.arcade.academy/en/2.6.17/tutorials/views/index.html</li>
+<li>Add class PauseView and GameOverView</li>
+<li>(Advanced) Add more levels by inheriting class MyGame.</li>
+</ol>
                 </div><!-- /.entry-content -->
         </article>
 </section>
